@@ -1,5 +1,4 @@
 # Code for Chinese Checkers AI
-This repository contains the code utilized on the Eclipse platform to create the Chinese Checkers A.I.
 <p align="center">
   <img width="450" height="590" src="ChineseCheckersBoard.PNG">
 </p>
