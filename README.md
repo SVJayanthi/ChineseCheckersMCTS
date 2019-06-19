@@ -18,7 +18,7 @@ To run the program, open the GUI file from `ChineseCheckersMCTS\src\MCTSCCGame\G
 ### Code Example:  
 Sample of simulating the potential outcomes of move.
 
-  
+	   public Node simulate(Seed seedSim, Node moveNode, int[] move) {
 		   Seed[][] boardSimulation = copyBoard(gameBoard);
 		   Seed currentPlayer = (seedSim == Seed.CROSS) ? Seed.NOUGHT : Seed.CROSS;;
 		   
@@ -35,6 +35,7 @@ Sample of simulating the potential outcomes of move.
 		   Node bestMove = runSim(boardSimulation, moveNode);
 		   
 		   return bestMove;
+	   }
 
 ## License
 [GNU](LICENSE)
