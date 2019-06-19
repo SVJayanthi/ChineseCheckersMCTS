@@ -19,8 +19,7 @@ Sample of simulating the potential outcomes of move.
 
 	   public Node simulate(Seed seedSim, Node moveNode, int[] move) {
 		   Seed[][] boardSimulation = copyBoard(gameBoard);
-		   Seed currentPlayer = (seedSim == Seed.CROSS) ? Seed.NOUGHT : Seed.CROSS;;
-		   
+		   Seed currentPlayer = (seedSim == Seed.CROSS) ? Seed.NOUGHT : Seed.CROSS;
 		   if (moveNode == null) {
 			   moveNode = new Node(boardSimulation, currentPlayer, 0, 0, move[0], move[1], move[2], move[3], 0);
 			   moveNode.createChildren(moveNode);
@@ -28,11 +27,8 @@ Sample of simulating the potential outcomes of move.
 			   moveNode = findChildren(moveNode, move[0], move[1], move[2], move[3]);
 			   moveNode.createChildren(moveNode);
 		   }
-		   
 		   moveNode.setParent(null);
-
 		   Node bestMove = runSim(boardSimulation, moveNode);
-		   
 		   return bestMove;
 	   }
 
