@@ -14,3 +14,6 @@ It has both a graphical user interface.
 
 ### Chinese Checkers GUI
 To run the program, open the GUI file from `ChineseCheckersMCTS\src\MCTSCCGame\GUI.java` in a Java IDE and run the interface to play the Chinese Checkers game.
+
+## License
+[GNU](LICENSE)
